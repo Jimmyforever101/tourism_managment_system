@@ -5,6 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tourism Management System</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+        }
+
+        header {
+            background-color: #4a47a3;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        }
+
+        #home {
+            background: url('images/explore.jpg') no-repeat center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 4rem 2rem;
+            border-radius: 10px;
+        }
+
+        #home h2 {
+            font-size: 2.5rem;
+        }
+
+        #destinations .destination, 
+        #packages .package {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        #destinations .destination:hover, 
+        #packages .package:hover {
+            transform: translateY(-10px);
+            background: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+            color: #fff;
+        }
+
+        #contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #contact label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        #contact input, 
+        #contact textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        #contact button {
+            padding: 10px;
+            background-color: #4a47a3;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        #contact button:hover {
+            background-color: #ffd700;
+        }
+
+        footer {
+            background-color: #4a47a3;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            #home h2 {
+                font-size: 2rem;
+            }
+
+            #destinations .destination, 
+            #packages .package {
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -74,7 +225,5 @@
     <footer>
         <p>&copy; 2024 Tourism Management System. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
